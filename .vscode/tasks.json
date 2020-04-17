@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++ build active file",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "all"
+            ],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+        },
+        {
+            "label": "g++ build test file",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "unit_test"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+        }
+    ]
+}
